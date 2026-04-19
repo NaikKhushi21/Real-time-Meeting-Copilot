@@ -80,7 +80,18 @@ It captures mic audio, transcribes continuously, generates exactly 3 live sugges
 ## Key Files
 
 ```txt
+api/
+  health.js
+  transcribe.js
+  suggestions.js
+  chat/
+    stream.js
+  _lib/
+    groq.js
+    http.js
+
 server/
+  app.js
   index.js
   routes/
     transcribe.js
@@ -143,8 +154,22 @@ npm start
 
 ## Deployment Notes
 
-- Deploy frontend + backend so `/api/transcribe`, `/api/suggestions`, `/api/chat/stream` are reachable from the frontend.
-- Vercel deployment is supported; ensure server routes are available in deployed environment.
+- Vercel single-project deployment is supported in this repo.
+- Vercel uses native serverless function files under `api/*`.
+- Local development keeps using Express (`server/index.js`) via Vite proxy.
+- Required API paths:
+  - `/api/health`
+  - `/api/transcribe`
+  - `/api/suggestions`
+  - `/api/chat/stream`
+
+### Deploy on Vercel (Git-connected)
+
+1. Import this repo in Vercel.
+2. Framework: `Vite` (auto-detected).
+3. Build command: `npm run build`.
+4. Output directory: `dist`.
+5. Deploy.
 
 ## Known Tradeoffs
 
