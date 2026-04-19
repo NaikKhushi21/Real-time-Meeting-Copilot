@@ -163,14 +163,6 @@ npm start
   - `/api/suggestions`
   - `/api/chat/stream`
 
-### Deploy on Vercel (Git-connected)
-
-1. Import this repo in Vercel.
-2. Framework: `Vite` (auto-detected).
-3. Build command: `npm run build`.
-4. Output directory: `dist`.
-5. Deploy.
-
 ## Known Tradeoffs
 
 - Session state is in-memory only (no persistence across page reload).
