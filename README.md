@@ -1,9 +1,9 @@
-# TwinMind - Live Suggestions
+# Real-time Live Suggestions
 
-Live meeting copilot app built for the TwinMind assignment.
+Live meeting copilot app built to capture conversations, generate focused live suggestions, and support deeper chat follow-ups.
 It captures mic audio, transcribes continuously, generates exactly 3 live suggestions per batch, and expands suggestions into detailed chat answers.
 
-## Assignment Coverage
+## Feature Coverage
 
 ### Mic + transcript
 
