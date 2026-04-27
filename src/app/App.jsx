@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <h1>TwinMind - Live Suggestions</h1>
+        <h1>Real-time Meeting Copilot</h1>
         <p>Transcript • Live Suggestions • Chat</p>
       </header>
 
